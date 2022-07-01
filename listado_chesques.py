@@ -1,13 +1,12 @@
 import csv
 
-print("Escriba el nombre del archivo")
-nombreArchivo = input()
-print("Escriba el numero de DNI")
-numeroDni = input()
-print("Escriba PANTALLA o CSV")
-salida = input()
-print("Escriba EMITIDO o DEPOSITADO")
-tipoCheque = input()
+nombreArchivo = input("Escriba el nombre del archivo")
+
+numeroDni = input("Escriba el numero de DNI")
+
+salida = input("Escriba PANTALLA o CSV")
+
+tipoCheque = input("Escriba EMITIDO o DEPOSITADO")
 
 
 file = open(nombreArchivo,"r")
