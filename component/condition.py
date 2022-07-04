@@ -14,7 +14,8 @@ def mostrarAlgo(argument):
                     imprimirDatosPantalla(row)
                 elif salida == "CSV":
                     row1 = row["DNI"]
-                    row2 = datetime.now()
+                    row2 = datetime.today().strftime('%Y-%m-%d')
+                    print(row2)
                     newfile = open(f"csv/{row1}{row2}.csv","a")
                     writerCSV = csv.writer(newfile)
                     writerCSV.writerow([row["FechaOrigen"], row["FechaPago"], row["Valor"], row["NroCheque"]])
